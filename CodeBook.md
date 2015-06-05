@@ -1,5 +1,5 @@
-CODEBOOK.md
-Friday, June 05, 2015
+# CODEBOOK.md
+## Friday, June 05, 2015
 
 Instructions for the project: 
 
