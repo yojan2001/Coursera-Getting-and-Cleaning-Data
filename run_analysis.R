@@ -101,13 +101,3 @@ cleanData2 <- aggregate(. ~subject + activity, cleanData, mean)
 cleanData2 <- cleanData2[order(cleanData2$subject, cleanData2$activity),]
 write.table(cleanData2, file = "merged_cleaned_data2.txt", row.name=FALSE)
 
-
-###########################
-# Create Codebook in knitr#
-###########################
-
-library(knitr)
-knit2html("C:\\Users\\abo586\\Desktop\\Coursera\\Course Project\\run_analysis.R", "codebook.Rmd")
-
-library(markdown)
-markdownToHTML("C:\\Users\\abo586\\Desktop\\Coursera\\Course Project\\codebook.html", "final.html")
